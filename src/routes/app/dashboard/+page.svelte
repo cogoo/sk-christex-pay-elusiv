@@ -1,11 +1,91 @@
+<script>
+	import {
+		Dialog,
+		DialogOverlay,
+		DialogTitle,
+		DialogDescription
+	} from '@rgossiaux/svelte-headlessui';
+	let sendDialogIsOpen = false;
+</script>
+
+<Dialog
+	open={sendDialogIsOpen}
+	on:close={() => (sendDialogIsOpen = false)}
+	class="relative z-10"
+	aria-labelledby="modal-title"
+	role="dialog"
+	aria-modal="true"
+>
+	<DialogOverlay class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
+
+	<div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+		<div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+			<!--
+            Modal panel, show/hide based on modal state.
+    
+            Entering: "ease-out duration-300"
+              From: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+              To: "opacity-100 translate-y-0 sm:scale-100"
+            Leaving: "ease-in duration-200"
+              From: "opacity-100 translate-y-0 sm:scale-100"
+              To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+          -->
+			<div
+				class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg sm:p-6"
+			>
+				<div>
+					<div class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-green-100">
+						<svg
+							class="h-6 w-6 text-green-600"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							aria-hidden="true"
+						>
+							<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+						</svg>
+					</div>
+					<div class="mt-3 text-center sm:mt-5">
+						<h3 class="text-base font-semibold leading-6 text-gray-900" id="modal-title">
+							Payment successful
+						</h3>
+						<div class="mt-2">
+							<p class="text-sm text-gray-500">
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius aliquam laudantium
+								explicabo pariatur iste dolorem animi vitae error totam. At sapiente aliquam
+								accusamus facere veritatis.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="mt-5 sm:mt-6 sm:grid sm:grid-flow-row-dense sm:grid-cols-2 sm:gap-3">
+					<button
+						on:click={() => (sendDialogIsOpen = false)}
+						type="button"
+						class="inline-flex w-full justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:col-start-2"
+						>Deactivate</button
+					>
+					<button
+						on:click={() => (sendDialogIsOpen = false)}
+						type="button"
+						class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:col-start-1 sm:mt-0"
+						>Cancel</button
+					>
+				</div>
+			</div>
+		</div>
+	</div>
+</Dialog>
+
 <main>
 	<div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
 		<header class="pb-4 pt-6 sm:pb-6">
 			<div class="mx-auto flex max-w-7xl flex-wrap items-center gap-6 sm:flex-nowrap px-6">
 				<h1 class="text-base font-semibold leading-7 text-gray-900">Dashboard</h1>
 
-				<a
-					href="#"
+				<button
+					on:click={() => (sendDialogIsOpen = true)}
 					class="ml-auto flex items-center gap-x-1 rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
 				>
 					<svg class="-ml-1.5 h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -14,7 +94,7 @@
 						/>
 					</svg>
 					Send
-				</a>
+				</button>
 			</div>
 		</header>
 
