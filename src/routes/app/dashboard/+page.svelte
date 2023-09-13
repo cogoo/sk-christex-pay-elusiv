@@ -135,7 +135,7 @@
 										<td class="py-5 text-right">
 											<div class="flex justify-end">
 												<a
-													href="#"
+													href="/app/transactions/a1"
 													class="text-sm font-medium leading-6 text-indigo-600 hover:text-indigo-500"
 													>View<span class="hidden sm:inline"> transaction</span><span
 														class="sr-only">, invoice #00012, Reform</span
@@ -185,7 +185,7 @@
 										<td class="py-5 text-right">
 											<div class="flex justify-end">
 												<a
-													href="#"
+													href="/app/transactions/a1"
 													class="text-sm font-medium leading-6 text-indigo-600 hover:text-indigo-500"
 													>View<span class="hidden sm:inline"> transaction</span><span
 														class="sr-only">, invoice #00011, Tom Cook</span
@@ -236,7 +236,7 @@
 										<td class="py-5 text-right">
 											<div class="flex justify-end">
 												<a
-													href="#"
+													href="/app/transactions/a1"
 													class="text-sm font-medium leading-6 text-indigo-600 hover:text-indigo-500"
 													>View<span class="hidden sm:inline"> transaction</span><span
 														class="sr-only">, invoice #00009, Tuple</span
@@ -299,7 +299,7 @@
 										<td class="py-5 text-right">
 											<div class="flex justify-end">
 												<a
-													href="#"
+													href="/app/transactions/a1"
 													class="text-sm font-medium leading-6 text-indigo-600 hover:text-indigo-500"
 													>View<span class="hidden sm:inline"> transaction</span><span
 														class="sr-only">, invoice #00010, SavvyCal</span
