@@ -34,28 +34,140 @@
 				class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg sm:p-6"
 			>
 				<div>
-					<div class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-green-100">
-						<svg
-							class="h-6 w-6 text-green-600"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke-width="1.5"
-							stroke="currentColor"
-							aria-hidden="true"
-						>
-							<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-						</svg>
-					</div>
-					<div class="mt-3 text-center sm:mt-5">
-						<h3 class="text-base font-semibold leading-6 text-gray-900" id="modal-title">
-							Payment successful
-						</h3>
-						<div class="mt-2">
-							<p class="text-sm text-gray-500">
-								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius aliquam laudantium
-								explicabo pariatur iste dolorem animi vitae error totam. At sapiente aliquam
-								accusamus facere veritatis.
-							</p>
+					<!-- elusiv -->
+					<div class=" bg-white mx-auto w-full flex flex-col justify-start p-5">
+						<h3 class="text-base font-semibold leading-6 text-gray-900" id="modal-title">Send</h3>
+
+						<div class="flex flex-col">
+							<div>
+								<div class="relative inline-flex" />
+								<div
+									class="border-gray-100 bg-white dark:text-neutral-400 focus:border-elusiv-purple-400 hover:border-elusiv-purple-400 flex rounded-[5px] w-full px-2 mx-auto border shadow-sm dark:shadow-none items-center py-1 transition-all duration-150 ease-in justify-between"
+								>
+									<div class="h-full items-center">
+										<input
+											type="text"
+											name="amount"
+											id="amount"
+											class=" bg-transparent block w-full text-base border-none rounded-[5px] focus:outline-none focus:ring-0 placeholder:text-gray-400 dark:placeholder:text-neutral-600"
+											placeholder="0"
+											autocomplete="off"
+											value="0"
+										/>
+									</div>
+									<div class="w-5 h-5" />
+									<div class="h-full items-center flex flex-col justify-center px-2">
+										<button
+											disabled=""
+											class="bg-gray-100 text-gray-500 hover:text-gray-600 hover:bg-gray-200 dark:bg-neutral-400 dark:hover:bg-neutral-300 dark:text-neutral-800 dark:hover:text-neutral-700 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium uppercase cursor-pointer transition-all ease-in duration-150 disabled:opacity-50 disabled:cursor-not-allowed"
+											>max</button
+										>
+									</div>
+									<div class="h-full items-center w-32">
+										<div>
+											<div class="relative">
+												<div class="flex items-center">
+													<img
+														src="/img/tokens/usdc.svg"
+														alt=""
+														class="h-5 w-5 flex-shrink-0 absolute ml-2"
+													/><input
+														class="w-full rounded-md bg-transparent py-2 pl-10 focus:outline-none active:outline-none border-none focus:ring-0 sm:text-sm"
+														role="combobox"
+														type="text"
+														aria-expanded="false"
+														aria-autocomplete="list"
+														value=""
+													/>
+													<button
+														class="absolute inset-y-0 right-0 flex items-center rounded-r-md focus:outline-none"
+														id="headlessui-combobox-button-:r6:"
+														type="button"
+														tabindex="-1"
+														aria-haspopup="listbox"
+														aria-expanded="false"
+														><svg
+															xmlns="http://www.w3.org/2000/svg"
+															viewBox="0 0 24 24"
+															fill="currentColor"
+															aria-hidden="true"
+															class="h-5 w-5 text-gray-600 dark:text-neutral-400"
+															><path
+																fill-rule="evenodd"
+																d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+																clip-rule="evenodd"
+															/></svg
+														></button
+													>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="relative inline-flex mt-4 mb-4">
+							<div
+								class=" flex justify-between rounded-[5px] w-full mx-auto px-2 bg-white border border-gray-100 shadow-sm dark:shadow-none items-center py-1 hover:border-elusiv-purple-400 transition-all duration-150 ease-in"
+							>
+								<div class="h-full items-center w-4/5">
+									<input
+										type="text"
+										name="text"
+										id="text"
+										class="bg-transparent block w-full text-base border-none rounded-[5px] focus:outline-none focus:ring-0
+								placeholder:text-gray-400 dark:placeholder:text-neutral-600 animate-none"
+										placeholder="Recipient's address"
+										autocomplete="off"
+										data-lpignore="true"
+										value=""
+									/>
+								</div>
+								<div class=" items-center w-1/5">
+									<div
+										class="flex justify-end items-center pr-3 text-white cursor-pointer hover:opacity-75 transition-all duration-150 ease-in"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											fill="currentColor"
+											aria-hidden="true"
+											class="w-6 h-6 text-gray-800 dark:text-neutral-100"
+											><path
+												fill-rule="evenodd"
+												d="M3 4.875C3 3.839 3.84 3 4.875 3h4.5c1.036 0 1.875.84 1.875 1.875v4.5c0 1.036-.84 1.875-1.875 1.875h-4.5A1.875 1.875 0 013 9.375v-4.5zM4.875 4.5a.375.375 0 00-.375.375v4.5c0 .207.168.375.375.375h4.5a.375.375 0 00.375-.375v-4.5a.375.375 0 00-.375-.375h-4.5zm7.875.375c0-1.036.84-1.875 1.875-1.875h4.5C20.16 3 21 3.84 21 4.875v4.5c0 1.036-.84 1.875-1.875 1.875h-4.5a1.875 1.875 0 01-1.875-1.875v-4.5zm1.875-.375a.375.375 0 00-.375.375v4.5c0 .207.168.375.375.375h4.5a.375.375 0 00.375-.375v-4.5a.375.375 0 00-.375-.375h-4.5zM6 6.75A.75.75 0 016.75 6h.75a.75.75 0 01.75.75v.75a.75.75 0 01-.75.75h-.75A.75.75 0 016 7.5v-.75zm9.75 0A.75.75 0 0116.5 6h.75a.75.75 0 01.75.75v.75a.75.75 0 01-.75.75h-.75a.75.75 0 01-.75-.75v-.75zM3 14.625c0-1.036.84-1.875 1.875-1.875h4.5c1.036 0 1.875.84 1.875 1.875v4.5c0 1.035-.84 1.875-1.875 1.875h-4.5A1.875 1.875 0 013 19.125v-4.5zm1.875-.375a.375.375 0 00-.375.375v4.5c0 .207.168.375.375.375h4.5a.375.375 0 00.375-.375v-4.5a.375.375 0 00-.375-.375h-4.5zm7.875-.75a.75.75 0 01.75-.75h.75a.75.75 0 01.75.75v.75a.75.75 0 01-.75.75h-.75a.75.75 0 01-.75-.75v-.75zm6 0a.75.75 0 01.75-.75h.75a.75.75 0 01.75.75v.75a.75.75 0 01-.75.75h-.75a.75.75 0 01-.75-.75v-.75zM6 16.5a.75.75 0 01.75-.75h.75a.75.75 0 01.75.75v.75a.75.75 0 01-.75.75h-.75a.75.75 0 01-.75-.75v-.75zm9.75 0a.75.75 0 01.75-.75h.75a.75.75 0 01.75.75v.75a.75.75 0 01-.75.75h-.75a.75.75 0 01-.75-.75v-.75zm-3 3a.75.75 0 01.75-.75h.75a.75.75 0 01.75.75v.75a.75.75 0 01-.75.75h-.75a.75.75 0 01-.75-.75v-.75zm6 0a.75.75 0 01.75-.75h.75a.75.75 0 01.75.75v.75a.75.75 0 01-.75.75h-.75a.75.75 0 01-.75-.75v-.75z"
+												clip-rule="evenodd"
+											/></svg
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-xs mb-4 z-40 max-w-sm mx-auto w-full">
+							<div class="font-normal">
+								<button
+									class="my-2 outline-offset-2 flex justify-between w-fulltext-gray-500 dark:text-neutral-400focus:outline-gray-200 duration-150 ease-in transition-all items-center h-4"
+									id="headlessui-disclosure-button-:r8:"
+									type="button"
+									aria-expanded="false"
+									><span class="">Total fees</span>
+									<div class="space-x-2 flex items-center">
+										<div class="items-center space-x-2 flex h-[20px]"><span>~$0.0000</span></div>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 20 20"
+											fill="currentColor"
+											aria-hidden="true"
+											class="ui-open:rotate-180 ui-open:transform h-4 w-4 transition-all duration-150 delay-300"
+											><path
+												fill-rule="evenodd"
+												d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+												clip-rule="evenodd"
+											/></svg
+										>
+									</div></button
+								>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -64,7 +176,7 @@
 						on:click={() => (sendDialogIsOpen = false)}
 						type="button"
 						class="inline-flex w-full justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:col-start-2"
-						>Deactivate</button
+						>Confirm</button
 					>
 					<button
 						on:click={() => (sendDialogIsOpen = false)}
