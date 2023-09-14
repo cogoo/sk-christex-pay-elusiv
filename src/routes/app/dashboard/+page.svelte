@@ -523,7 +523,7 @@
 			</div>
 
 			<!-- Recent client list-->
-			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-4 sm:pb-6 lg:pb-8">
 				<div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
 					<div class="flex items-center justify-between">
 						<h2 class="text-base font-semibold leading-7 text-gray-900">Recent clients</h2>
